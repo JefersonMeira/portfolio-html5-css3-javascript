@@ -13,6 +13,6 @@ Foram utilizadas poucas instruções JavaScript para realizar algumas animaçõe
 
 Foi criado um botão "Voltar ao topo", que realiza a ação de voltar ao início da página.
 
-Uma das seções apresenta o conteúdo utilizando uma função de "carrocel".
+Uma das seções apresenta o conteúdo utilizando uma função de "carrossel".
 
 O projeto desenvolvido é totalmente responsivo, se adequando aos diferentes tipos de tela.
