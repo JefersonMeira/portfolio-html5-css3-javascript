@@ -1,799 +1,809 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .largura-maxima {
-	max-width: 1300px;
-	padding: 0 80px;
-	margin: auto;
+  max-width: 1500px;
+  padding: 0 80px;
+  margin: auto;
 }
-
 
 /*-------------------*\
 	BARRA NAVEGAÇÃO
 \*-------------------*/
 .barra-navegacao {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	padding: 30px 0;
-	font-family: 'Ubuntu', sans-serif;
-	transition: all 0.3s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .barra-navegacao.posicao-original {
-	padding: 15px 0;
-	background: crimson;
+  padding: 15px 0;
+  background: crimson;
 }
 
 .barra-navegacao .largura-maxima {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 0 auto 40px;
+  max-width: 1900px;
 }
 
 .barra-navegacao .logo a {
-	color: #fff;
-	font-size: 35px;
-	font-weight: 600;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .barra-navegacao .logo a span {
-	color: crimson;
-	transition: all 0.3s ease;
+  color: crimson;
+  transition: all 0.3s ease;
 }
 
 .barra-navegacao.posicao-original .logo a span {
-	color: #fff;
+  color: #fff;
 }
 
 .barra-navegacao .menu li {
-	list-style: none;
-	display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
 .barra-navegacao .menu li a {
-	display: block;
-	color: #fff;
-	font-size: 18px;
-	font-weight: 500;
-	margin-left: 25px;
-	transition: color 0.3s ease;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
 }
 
 .barra-navegacao .menu li a:hover {
-	color: crimson;
+  color: crimson;
 }
 
 .barra-navegacao.posicao-original .menu li a:hover {
-	color: #fff;
+  color: #fff;
 }
-
 
 /*-------------------*\
 	BOTÃO MENU
 \*-------------------*/
 .menu-botao {
-	color: #fff;
-	font-size: 23px;
-	cursor: pointer;
-	display: none;
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
 }
 
 .botao-subir-inicio {
-	position: fixed;
-	height: 45px;
-	width: 42px;
-	background: crimson;
-	right: 30px;
-	bottom: 10px;
-	text-align: center;
-	line-height: 45px;
-	color: #fff;
-	z-index: 998;
-	font-size: 30px;
-	border-radius: 6px;
-	cursor: pointer;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s ease;
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 998;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .botao-subir-inicio.mostrar {
-	bottom: 30px;
-	opacity: 1;
-	pointer-events: auto;
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
 }
-
 
 /*-------------------*\
 	SEÇÃO "HOME
 \*-------------------*/
 .home {
-	display: flex;
-    background: url("../img/banner.png") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  background: url("../img/banner.png") no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .home .largura-maxima {
-	margin: auto 0 auto 40px;
+  margin: auto 0 auto 40px;
 }
 
 .home .home-conteudo .texto-boas-vindas {
-	font-size: 27px;
+  font-size: 27px;
 }
 
 .home .home-conteudo .texto-meu-nome {
-	font-size: 75px;
-	font-weight: 600;
-	margin-left: -3px;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
 }
 
 .home .home-conteudo .texto-minhas-funcoes {
-	font-size: 40px;
-	margin: 5px 0;
+  font-size: 40px;
+  margin: 5px 0;
 }
 
 .home .home-conteudo .texto-minhas-funcoes span {
-	color: crimson;
-	font-weight: 500;
+  color: crimson;
+  font-weight: 500;
 }
 
 .home .home-conteudo a {
-	display: inline-block;
-	background: crimson;
-	color: #fff;
-	font-size: 25px;
-	padding: 12px 36px;
-	margin-top: 20px;
-	border-radius: 6px;
-	border: 2px solid crimson;
-	transition: all 0.3s ease;
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
 }
 
 .home .home-conteudo a:hover {
-	color: crimson;
-	background: none;
+  color: crimson;
+  background: none;
 }
-
 
 /*-------------------*\
 	CÓDIGO SIMILAR
 \*-------------------*/
-.sobre, .servicos, .habilidades, .projetos, .contato, footer {
-	font-family: 'Poppins', sans-serif;
+.sobre,
+.servicos,
+.habilidades,
+.projetos,
+.contato,
+footer {
+  font-family: "Poppins", sans-serif;
 }
 
 .sobre .sobre-conteudo,
-.servicos .servicos-conteudo, 
+.servicos .servicos-conteudo,
 .habilidades .habilidades-conteudo,
 .contato .contato-conteudo {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section {
-	padding: 80px 0;
+  padding: 80px 0;
 }
 
 section .titulo {
-	position: relative;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 500;
-	margin-bottom: 60px;
-	padding-bottom: 20px ;
-	font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 section .titulo::before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 200px;
-	height: 3px;
-	background: #111;
-	transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 200px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
 }
 
 section .titulo::after {
-	position: absolute;
-	bottom: -12px;
-	left: 50%;
-	font-size: 20px;
-	color: crimson;
-	padding: 5px;
-	background: #fff;
-	transform: translateX(-50%);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
 }
-
 
 /*-------------------*\
 	SEÇÃO "SOBRE"
 \*-------------------*/
 .sobre .titulo::after {
-	content: "quem eu sou";
+  content: "quem eu sou";
 }
 
 .sobre .sobre-conteudo .esquerda {
-	width: 45%;
+  width: 45%;
 }
 
 .sobre .sobre-conteudo .esquerda img {
-	height: 400px;
-	width: 400px;
-	object-fit: cover;
-	border-radius: 6px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .sobre .sobre-conteudo .direita {
-	width: 55%;
+  width: 55%;
 }
 
 .sobre .sobre-conteudo .direita .texto-quem-sou-eu {
-	font-size: 24px;
-	font-weight: 600;
-	padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 
 .sobre .sobre-conteudo .direita .texto-quem-sou-eu span {
-	color: crimson;
+  color: crimson;
 }
 
 .sobre .sobre-conteudo .direita p {
-	text-align: justify;
+  text-align: justify;
 }
 
 .sobre .sobre-conteudo .direita a {
-	display: inline-block;
-	background: crimson;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 500;
-	padding: 10px 30px;
-	margin-top: 20px;
-	border-radius: 6px;
-	border: 2px solid crimson;
-	transition: all 0.3s ease;
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
 }
 
 .sobre .sobre-conteudo .direita a:hover {
-	color: crimson;
-	background: none;
+  color: crimson;
+  background: none;
 }
-
-
 
 /*-------------------*\
 	SEÇÃO "SERVIÇOS"
 \*-------------------*/
 .servicos {
-	color: #fff;
-	background: #111;
+  color: #fff;
+  background: #111;
 }
 
 .servicos .titulo::before {
-	background: #fff;
+  background: #fff;
 }
 
 .servicos .titulo::after {
-	background: #111;
-	content: "o que eu forneço";
+  background: #111;
+  content: "o que eu forneço";
 }
 
 .servicos .servicos-conteudo .cartao {
-	width: calc(33% - 20px);
-	background: #222;
-	text-align: center;
-	border-radius: 6px;
-	padding: 20px 25px;
-	cursor: pointer;
-	transition: all 0.3s ease;
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .servicos .servicos-conteudo .cartao:hover {
-	background: crimson;
+  background: crimson;
 }
 
 .servicos .servicos-conteudo .cartao .box {
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .servicos .servicos-conteudo .cartao:hover .box {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .servicos .servicos-conteudo .cartao i {
-	font-size: 50px;
-	color: crimson;
-	transition: color 0.3s ease;
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
 }
 
 .servicos .servicos-conteudo .cartao:hover i {
-	color: #fff;
+  color: #fff;
 }
 
 .servicos .servicos-conteudo .cartao .texto-cartao {
-	font-size: 25px;
-	font-weight: 500;
-	margin: 10px 0 7px 0;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
 }
-
 
 /*-------------------*\
   SEÇÃO "HABILIDADES"
 \*-------------------*/
 .habilidades .titulo::after {
-	content: "o que eu sei";
+  content: "o que eu sei";
 }
 
 .habilidades .habilidades-conteudo .coluna {
-	width: calc(50% - 30px);
+  width: calc(50% - 30px);
 }
 
 .habilidades .habilidades-conteudo .esquerda .texto-habilidade {
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .habilidades .habilidades-conteudo .esquerda p {
-	text-align: justify;
-}
-
-.habilidades .habilidades-conteudo .esquerda a {
-	display: inline-block;
-	background: crimson;
-	color: #fff;
-	font-size: 18px;
-	font-weight: 500;
-	padding: 8px 16px;
-	margin-top: 20px;
-	border-radius: 6px;
-	border: 2px solid crimson;
-	transition: all 0.3s ease;
-}
-
-.habilidades .habilidades-conteudo .esquerda a:hover {
-	color: crimson;
-	background: none;
+  text-align: justify;
 }
 
 .habilidades .habilidades-conteudo .direita .barras {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .habilidades .habilidades-conteudo .direita .informacao {
-	display: flex;
-	margin-bottom: 5px;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .habilidades .habilidades-conteudo .direita span {
-	font-size: 18px;
-	font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .habilidades .habilidades-conteudo .direita .linha {
-	position: relative;
-	width: 100%;
-	height: 5px;
-	background: lightgrey;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: lightgrey;
 }
 
 .habilidades .habilidades-conteudo .direita .linha::before {
-	content: "";
-	position: absolute;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: crimson;
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: crimson;
 }
 
 .habilidades-conteudo .direita .requisitos::before {
-	width: 90%;
+  width: 90%;
 }
 
 .habilidades-conteudo .direita .backend::before {
-	width: 40%;
+  width: 25%;
 }
 
 .habilidades-conteudo .direita .frontend::before {
-	width: 30%;
+  width: 30%;
 }
 
 .habilidades-conteudo .direita .banco-dados::before {
-	width: 50%;
+  width: 50%;
 }
 
 .habilidades-conteudo .direita .testes::before {
-	width: 70%;
+  width: 75%;
 }
-
 
 /*-------------------*\
   SEÇÃO "PROJETOS"
 \*-------------------*/
 .projetos {
-	color: #fff;
-	background: #111;
+  color: #fff;
+  background: #111;
 }
 
 .projetos .titulo::after {
-	content: "últimos trabalhos";
-	background: #111;
+  content: "últimos trabalhos";
+  background: #111;
 }
 
 .projetos .titulo::before {
-	background: #fff;
+  background: #fff;
 }
 
 .projetos .carrossel .cartao {
-	background: #222;
-	border-radius: 6px;
-	padding: 25px 35px;
-	transition: all 0.3s ease;
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  transition: all 0.3s ease;
 }
 
 .projetos .carrossel .cartao:hover {
-	background: crimson;
+  background: crimson;
 }
 
 .projetos .carrossel .cartao .box {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .projetos .carrossel .cartao:hover .box {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .projetos .carrossel .cartao .texto-nome-projeto {
-	font-size: 25px;
-	font-weight: 500;
-	margin: 10px 0 7px 0;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
 }
 
 .projetos .carrossel .cartao img {
-	height: 150px;
-	width: 150px;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 5px solid crimson;
-	transition: all 0.3s ease;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
 }
 
 .projetos .carrossel .cartao:hover img {
-	border-color: #fff;
+  border-color: #fff;
 }
 
 .owl-dots {
-	text-align: center;
-	margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .owl-dot {
-	height: 13px;
-	width: 13px;
-	margin: 0 5px;
-	outline: none!important;
-	border-radius: 50%;
-	border: 2px solid crimson!important;
-	transition: all 0.3s ease;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
 }
 
 .owl-dot.active {
-	width: 35px;
-	border-radius: 14px;
+  width: 35px;
+  border-radius: 14px;
 }
 
 .owl-dot.active,
 .owl-dot:hover {
-	background: crimson!important;
+  background: crimson !important;
 }
-
-
 
 /*-------------------*\
   SEÇÃO "CONTATO"
 \*-------------------*/
 .contato .titulo::after {
-	content: "fale comigo";
+  content: "fale comigo";
 }
 
 .contato .contato-conteudo .coluna {
-	width: calc(50% - 30px);
+  width: calc(50% - 30px);
 }
 
 .contato .contato-conteudo .texto-contato {
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .contato .contato-conteudo .esquerda p {
-	text-align: justify;
+  text-align: justify;
 }
 
 .contato .contato-conteudo .esquerda .icones {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 .contato .contato-conteudo .linha {
-	display: flex;
-	height: 65px;
-	align-items: center;
+  display: flex;
+  height: 65px;
+  align-items: center;
 }
 
 .contato .contato-conteudo .linha .informacao {
-	margin-left: 30px;
+  margin-left: 30px;
 }
 
 .contato .contato-conteudo .linha i {
-	font-size: 25px;
-	color: crimson;
+  font-size: 25px;
+  color: crimson;
 }
 
 .contato .contato-conteudo .informacao .head {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .contato .contato-conteudo .informacao .sub-titulo {
-	color: #333;
+  color: #333;
 }
 
 .contato .direita form .campos {
-	display: flex;
+  display: flex;
 }
 
 .contato .direita form .campo,
 .contato .direita form .campos .campo {
-	height: 45px;
-	width: 100%;
-	margin-bottom: 15px;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .contato .direita form .mensagem {
-	height: 80px;
-	width: 100%;
+  height: 80px;
+  width: 100%;
 }
 
 .contato .direita form .nome {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 .contato .direita form .email {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .contato .direita form .campo input,
 .contato .direita form .mensagem textarea {
-	height: 100%;
-	width: 100%;
-	border: 1px solid lightgrey;
-	border-radius: 6px;
-	outline: none;
-	padding: 0 15px;
-	font-size: 17px;
-	font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
 }
 
 .contato .direita form .mensagem textarea {
-	padding-top: 10px;
-	resize: none;
+  padding-top: 10px;
+  resize: none;
 }
 
 .contato .direita form .botao-mensagem {
-	height: 40px;
-	width: 120px;
+  height: 40px;
+  width: 120px;
 }
 
 .contato .direita form .botao-mensagem button {
-	width: 100%;
-	height: 100%;
-	border: 2px solid crimson;
-	background: crimson;
-	color: #fff;
-	font-size: 18px;
-	font-weight: 500;
-	border-radius: 6px;
-	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
-	transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .contato .direita form .botao-mensagem button:hover {
-	color: crimson;
-	background: none;
+  color: crimson;
+  background: none;
 }
 
+.contato .contato-conteudo .direita .icones {
+  display: inline-block;
+}
+
+.contato .contato-conteudo .direita .icones .github {
+  list-style-type: none;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.contato .contato-conteudo .direita .icones .github:hover {
+  color: crimson;
+  background: none;
+}
+
+.contato .contato-conteudo .direita .icones .linkedin {
+  list-style-type: none;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.contato .contato-conteudo .direita .icones .linkedin:hover {
+  color: crimson;
+  background: none;
+}
 
 /*-------------------*\
   SEÇÃO "RODAPÉ"
 \*-------------------*/
 footer {
-	font-size: 16px;
-	background: #111;
-	padding: 20px 23px;
-	color: #fff;
-	text-align: center;
+  font-size: 16px;
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
 }
 
 footer span a {
-	color: crimson;
-		text-decoration: none;
+  color: crimson;
+  text-decoration: none;
 }
 
 footer span a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
-
-
-
 
 /*-------------------*\
 	"MEDIA QUERYS"
 \*-------------------*/
 @media (max-width: 1300px) {
-	.home .largura-maxima {
-		margin-left: 0px;
-	}
+  .home .largura-maxima {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 1104px) {
-	.sobre .sobre-conteudo .esquerda img {
-		height: 350px;
-		width: 350px;
-	}
+  .sobre .sobre-conteudo .esquerda img {
+    height: 350px;
+    width: 350px;
+  }
 }
 
 @media (max-width: 991px) {
-	.largura-maxima {
-		padding: 0 50px;
-	}
+  .largura-maxima {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 947px) {
-	.menu-botao {
-		display: block;
-		z-index: 999;
-	}
+  .menu-botao {
+    display: block;
+    z-index: 999;
+  }
 
-	.menu-botao i.ativo:before{
-		content: "\f00d";
-	}
+  .menu-botao i.ativo:before {
+    content: "\f00d";
+  }
 
-	.barra-navegacao .menu {
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		left: -100%;
-		top: 0;
-		background: #111;
-		text-align: center;
-		padding-top: 80px;
-		transition: all 0.3s ease;
-	}
+  .barra-navegacao .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
 
-	.barra-navegacao .menu.ativo {
-		left: 0;
-	}
+  .barra-navegacao .menu.ativo {
+    left: 0;
+  }
 
-	.barra-navegacao .menu li {
-		display: block;
-	}
+  .barra-navegacao .menu li {
+    display: block;
+  }
 
-	.barra-navegacao .menu li a {
-		display: inline-block;
-		margin: 20px 0;
-		font-size: 25px;
+  .barra-navegacao .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
 
-	}
+  .home .home-conteudo .texto-meu-nome {
+    font-size: 70px;
+  }
 
-	.home .home-conteudo .texto-meu-nome {
-		font-size: 70px;
-	}
+  .home .home-conteudo .texto-minhas-funcoes {
+    font-size: 35px;
+  }
 
-	.home .home-conteudo .texto-minhas-funcoes {
-		font-size: 35px;
-	}
+  .home .home-conteudo a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
 
-	.home .home-conteudo a {
-		font-size: 23px;
-		padding: 10px 30px;
-	}
+  .largura-maxima {
+    max-width: 800px;
+  }
 
-	.largura-maxima {
-		max-width: 800px;
-	}
+  .sobre .sobre-conteudo .coluna {
+    width: 100%;
+  }
 
-	.sobre .sobre-conteudo .coluna {
-		width: 100%;
-	}
+  .sobre .sobre-conteudo .esquerda {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
 
-	.sobre .sobre-conteudo .esquerda {
-		display: flex;
-		justify-content: center;
-		margin: 0 auto 60px;
-	}
+  .sobre .sobre-conteudo .direita {
+    flex: 100%;
+  }
 
-	.sobre .sobre-conteudo .direita {
-		flex: 100%;
-	}
+  .servicos .servicos-conteudo .cartao {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 
-	.servicos .servicos-conteudo .cartao {
-		width: calc(50% - 10px);
-		margin-bottom: 20px;
-	}
-
-	.habilidades .habilidades-conteudo .coluna,
-	.contato .contato-conteudo .coluna {
-		width: 100%;
-		margin-bottom: 35px;
-	}
-
+  .habilidades .habilidades-conteudo .coluna,
+  .contato .contato-conteudo .coluna {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 690px) {
-	.largura-maxima {
-		padding: 0 23px;
-	}
+  .largura-maxima {
+    padding: 0 23px;
+  }
 
-	.home .home-conteudo .texto-meu-nome {
-		font-size: 60px;
-	}
+  .home .home-conteudo .texto-meu-nome {
+    font-size: 60px;
+  }
 
-	.home .home-conteudo .texto-minhas-funcoes {
-		font-size: 32px;
-	}
+  .home .home-conteudo .texto-minhas-funcoes {
+    font-size: 32px;
+  }
 
-	.home .home-conteudo a {
-		font-size: 20px;
-		padding: 8px 20px;
-	}
+  .home .home-conteudo a {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
 
-	.servicos .servicos-conteudo .cartao {
-		width: 100%;
-	}
+  .servicos .servicos-conteudo .cartao {
+    width: 100%;
+  }
 
-	footer {
-		font-size: 12px;
-	}	
-
+  footer {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 550px) {
-	.largura-maxima {
-		padding: 0 23px;
-	}
+  .largura-maxima {
+    padding: 0 23px;
+  }
 
-	.home .home-conteudo .texto-meu-nome {
-		font-size: 50px;
-	}
+  .home .home-conteudo .texto-meu-nome {
+    font-size: 50px;
+  }
 
-	.home .home-conteudo .texto-minhas-funcoes {
-		font-size: 27px;
-	}
+  .home .home-conteudo .texto-minhas-funcoes {
+    font-size: 27px;
+  }
 }
