@@ -16,3 +16,5 @@ Foi criado um botão "Voltar ao topo", que realiza a ação de voltar ao início
 Uma das seções apresenta o conteúdo utilizando uma função de "carrossel".
 
 O projeto desenvolvido é totalmente responsivo, se adequando aos diferentes tipos de tela.
+
+O projeto pode ser acessado através do domínio: https://jefersonmeira.com.br/
